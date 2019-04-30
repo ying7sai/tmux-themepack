@@ -1,0 +1,27 @@
+# Theme options
+set -goqF @theme-clock-mode-colour "#{@powerline-color-main-1}"
+set -goq  @theme-clock-mode-style 24
+set -goqF @theme-display-panes-active-colour "#{@powerline-color-grey-5}"
+set -goqF @theme-display-panes-colour "#{@powerline-color-grey-1}"
+set -goqF @theme-message-bg "#{@powerline-color-main-1}"
+set -goqF @theme-message-command-bg "#{@powerline-color-grey-1}"
+set -goqF @theme-message-command-fg "#{@powerline-color-black-1}"
+set -goqF @theme-message-fg "#{@powerline-color-black-1}"
+set -goqF @theme-mode-bg "#{@powerline-color-main-1}"
+set -goqF @theme-mode-fg "#{@powerline-color-black-1}"
+set -goq  @theme-pane-active-border-bg default
+set -goqF @theme-pane-active-border-fg "#{@powerline-color-main-1}"
+set -goq  @theme-pane-border-bg default
+set -goqF @theme-pane-border-fg "#{@powerline-color-grey-3}"
+set -goqF @theme-status-bg "#{@powerline-status-bg}"
+set -goqF @theme-status-fg "#{@powerline-status-fg}"
+set -goq  @theme-status-interval 1
+set -goq  @theme-status-justify centre
+set -goqF @theme-status-left "#[bg=#{@powerline-status-left-area-left-bg},fg=#{@powerline-status-left-area-left-fg},bold] #{@themepack-status-left-area-left-format} #[bg=#{@powerline-status-left-area-middle-bg},fg=#{@powerline-status-left-area-left-bg},nobold]#[bg=#{@powerline-status-left-area-middle-bg},fg=#{@powerline-status-left-area-middle-fg}] #{@themepack-status-left-area-middle-format} #[bg=#{@powerline-status-left-area-right-bg},fg=#{@powerline-status-left-area-middle-bg}]#[bg=#{@powerline-status-left-area-right-bg},fg=#{@powerline-status-left-area-right-fg}] #{@themepack-status-left-area-right-format} #[bg=#{@theme-status-bg},fg=#{@powerline-status-left-area-right-bg},nobold]"
+set -goqF @theme-status-left-bg "#{@theme-status-bg}"
+set -goqF @theme-status-left-fg "#{@theme-status-fg}"
+set -goq  @theme-status-left-length 40
+set -goqF @theme-status-right "#[bg=#{@theme-status-bg},fg=#{@powerline-status-right-area-left-bg}]#[bg=#{@powerline-status-right-area-left-bg},fg=#{@powerline-status-right-area-left-fg}] #{@themepack-status-right-area-left-format} #[bg=#{@powerline-status-right-area-left-bg},fg=#{@powerline-status-right-area-middle-bg}]#[bg=#{@powerline-status-right-area-middle-bg},fg=#{@powerline-status-right-area-middle-fg}] #{@themepack-status-right-area-middle-format} #[bg=#{@powerline-status-right-area-middle-bg},fg=#{@powerline-status-right-area-right-bg}]#[bg=#{@powerline-status-right-area-right-bg},fg=#{@powerline-status-right-area-right-fg},bold] #{@themepack-status-right-area-right-format} "
+set -goqF @theme-status-right-bg "#{@theme-status-bg}"
+set -goqF @theme-status-right-fg "#{@theme-status-fg}"
+set -goq  @theme-status-right-length 150
