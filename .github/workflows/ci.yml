@@ -1,0 +1,11 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Ensure all generated theme files are up to date
+      run: make test
