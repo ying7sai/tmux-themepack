@@ -1,39 +1,39 @@
 # Tmux Themepack
 
-A pack of various themes for Tmux.
-
+A pack of various themes for Tmux for 2.6 or later.
 
 ## Installation
 
 ### Install manually
 
-1. Clone repo to local machine:
+1.  Clone repo to local machine:
 
         git clone https://github.com/jimeh/tmux-themepack.git ~/.tmux-themepack
 
-2. Source desired theme in your `~/.tmux.conf`:
+2.  Source desired theme in your `~/.tmux.conf`:
 
-        source-file "${HOME}/.tmux-themepack/powerline/block/green.tmuxtheme"
-    
-    In some linux distributions you might have to remove the quotation marks from the
-    `source-file` command to avoid a `no such file or directory` error:
-    
-        source-file ${HOME}/.tmux-themepack/powerline/block/green.tmuxtheme
+         source-file "${HOME}/.tmux-themepack/powerline/block/green.tmuxtheme"
+
+    In some linux distributions you might have to remove the quotation marks
+    from the `source-file` command to avoid a `no such file or directory` error:
+
+         source-file ${HOME}/.tmux-themepack/powerline/block/green.tmuxtheme
 
 ### Install using [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
 
-1. Add plugin to the list of TPM plugins in `.tmux.conf`:
+1.  Add plugin to the list of TPM plugins in `.tmux.conf`:
 
         set -g @plugin 'jimeh/tmux-themepack'
 
-2. Hit `prefix + I` to fetch the plugin and source it. The plugin should now be working.
+2.  Press `prefix + I` to fetch the plugin and source it. The plugin should now
+    be working.
 
-You can pick and choose a theme via `.tmux.conf` option:
+Choose which theme is loaded by setting the `@themepack` option in your `.tmux.conf`:
 
 - `set -g @themepack 'basic'` (default)
 - `set -g @themepack 'powerline/block/blue'`
 - `set -g @themepack 'powerline/block/cyan'`
-- `set -g @themepack 'powerline/default/gray'`
+- `set -g @themepack 'powerline/default/green'`
 - `set -g @themepack 'powerline/double/magenta'`
 - `...`
 
@@ -41,19 +41,18 @@ You can pick and choose a theme via `.tmux.conf` option:
 
 ### Basic Themes
 
-**Default:**
+**Default (`default`):**
 
 ![basic](https://raw.github.com/jimeh/tmux-themepack-previews/master/default-preview.png)
 
-**Basic:**
+**Basic (`basic`):**
 
 ![basic](https://raw.github.com/jimeh/tmux-themepack-previews/master/basic-preview.png)
 
 ### Powerline Themes
 
-Inspired by the [Powerline][] VIM plugin,
-and requires the use of a powerline compatible font in your terminal. You can
-find a number of such fonts in the
+Inspired by the [Powerline][] VIM plugin, and requires the use of a powerline
+compatible font in your terminal. You can find a number of such fonts in the
 [powerline-fonts][] project.
 
 If your preferred font isn't available there, please refer to Powerline's
@@ -63,35 +62,35 @@ documentation on [Font Patching][] to patch the font yourself.
 [powerline-fonts]: https://github.com/Lokaltog/powerline-fonts
 [font patching]: https://powerline.readthedocs.org/en/latest/fontpatching.html#font-patching
 
-**Powerline Blue:**
+**Powerline Blue (`powerline/default/blue`):**
 
 ![powerline-default-blue](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/default/blue-preview.png)
 
-**Powerline Cyan:**
+**Powerline Cyan (`powerline/default/cyan`):**
 
 ![powerline-default-cyan](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/default/cyan-preview.png)
 
-**Powerline Gray:**
+**Powerline Gray (`powerline/default/gray`):**
 
 ![powerline-default-gray](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/default/gray-preview.png)
 
-**Powerline Green:**
+**Powerline Green (`powerline/default/green`):**
 
 ![powerline-default-green](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/default/green-preview.png)
 
-**Powerline Magenta:**
+**Powerline Magenta (`powerline/default/magenta`):**
 
 ![powerline-default-magenta](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/default/magenta-preview.png)
 
-**Powerline Orange:**
+**Powerline Orange (`powerline/default/orange`):**
 
 ![powerline-default-orange](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/default/orange-preview.png)
 
-**Powerline Red:**
+**Powerline Red (`powerline/default/red`):**
 
 ![powerline-default-red](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/default/red-preview.png)
 
-**Powerline Yellow:**
+**Powerline Yellow (`powerline/default/yellow`):**
 
 ![powerline-default-yellow](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/default/yellow-preview.png)
 
@@ -99,35 +98,35 @@ documentation on [Font Patching][] to patch the font yourself.
 
 Currently selected window is indicated by a colored block.
 
-**Powerline Blue Block:**
+**Powerline Blue Block (`powerline/block/blue`):**
 
 ![powerline-block-blue](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/block/blue-preview.png)
 
-**Powerline Cyan Block:**
+**Powerline Cyan Block (`powerline/block/cyan`):**
 
 ![powerline-block-cyan](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/block/cyan-preview.png)
 
-**Powerline Gray Block:**
+**Powerline Gray Block (`powerline/block/gray`):**
 
 ![powerline-block-gray](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/block/gray-preview.png)
 
-**Powerline Green Block:**
+**Powerline Green Block (`powerline/block/green`):**
 
 ![powerline-block-green](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/block/green-preview.png)
 
-**Powerline Magenta Block:**
+**Powerline Magenta Block (`powerline/block/magenta`):**
 
 ![powerline-block-magenta](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/block/magenta-preview.png)
 
-**Powerline Orange Block:**
+**Powerline Orange Block (`powerline/block/orange`):**
 
 ![powerline-block-orange](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/block/orange-preview.png)
 
-**Powerline Red Block:**
+**Powerline Red Block (`powerline/block/red`):**
 
 ![powerline-block-red](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/block/red-preview.png)
 
-**Powerline Yellow Block:**
+**Powerline Yellow Block (`powerline/block/yellow`):**
 
 ![powerline-block-yellow](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/block/yellow-preview.png)
 
@@ -136,51 +135,53 @@ Currently selected window is indicated by a colored block.
 Both left and right far sides of the statusbar are colored, rather than just
 the left side.
 
-**Powerline Double Blue:**
+**Powerline Double Blue (`powerline/double/blue`):**
 
 ![powerline-double-blue](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/double/blue-preview.png)
 
-**Powerline Double Cyan:**
+**Powerline Double Cyan (`powerline/double/cyan`):**
 
 ![powerline-double-cyan](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/double/cyan-preview.png)
 
-**Powerline Double Green:**
+**Powerline Double Green (`powerline/double/green`):**
 
 ![powerline-double-green](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/double/green-preview.png)
 
-**Powerline Double Magenta:**
+**Powerline Double Magenta (`powerline/double/magenta`):**
 
 ![powerline-double-magenta](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/double/magenta-preview.png)
 
-**Powerline Double Orange:**
+**Powerline Double Orange (`powerline/double/orange`):**
 
 ![powerline-double-orange](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/double/orange-preview.png)
 
-**Powerline Double Red:**
+**Powerline Double Red (`powerline/double/red`):**
 
 ![powerline-double-red](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/double/red-preview.png)
 
-**Powerline Double Yellow:**
+**Powerline Double Yellow (`powerline/double/yellow`):**
 
 ![powerline-double-yellow](https://raw.github.com/jimeh/tmux-themepack-previews/master/powerline/double/yellow-preview.png)
 
+## Customizing
 
-## Tips
+All themes are built with overridable custom @-prefixed Tmux options, which
+means that any part of a theme can be easily customized.
 
-- Use different themes/colors on different machines by using some sort of
-  wrapper around launching Tmux.
+To customize a theme, simply look at the source to see the list of Tmux options
+with names beginning with a `@`, and simply set the desired option in your
+`tmux.conf` before the theme is loaded.
 
+## Development / Contributing
 
-## Contributing
+If you want to contribute a theme, please have them use custom @-prefixed Tmux
+options like existing themes, so they can be customized the same way.
 
-If you decide to contribute your own tmux themes, please try to base it on the
-`default.tmuxtheme` theme. This ensures that switching between themes works as
-it should and completely overwrites all settings from previous themes.
+New themes should be created under the `src` folder with a `.tmuxtheme`
+extension. Please have a look at existing themes to see how files can be
+included and shared between themes.
 
-If it's not possible to base your theme on my default one, something is
-probably missing from it. So please contribute a fix to the default theme too
-in that case :)
-
+To build all themes, just run `make build` from the root of the project.
 
 ## License
 
